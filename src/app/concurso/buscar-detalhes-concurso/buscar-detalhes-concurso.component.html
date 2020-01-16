@@ -1,0 +1,20 @@
+<div class="text-center align-middle mt-3 mb-3">
+    <form [formGroup]='buscarForm' class="row" (submit)='buscar()'>
+        <i aria-hidden="true" class="fa fa-search mr-1" ></i>
+            
+            <div class="form-group align-middle">
+                <input
+                formControlName="campoBuscar"
+                class="rounded"
+                type="search"
+                placeholder="número concurso"
+                autofocus
+                >
+            </div>
+            <div class="pl-3">
+                <button [disabled]="buscarForm.invalid" type="submit" class="btn btn-primary btn-block">
+                    Buscar
+                </button>
+            </div>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+.badge-circle {
+    display: inline-block;
+    padding: 0.6em;
+    border-radius: 10rem;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    vertical-align: middle;
+  }  
+.badge-numbers-megasena {
+  color: white;
+  background-color: #209869;
+}

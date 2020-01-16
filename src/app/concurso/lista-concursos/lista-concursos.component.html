@@ -1,0 +1,21 @@
+<p>Últimos concursos</p>
+<table class="table table-striped">
+    <thead>
+        <th scope="col">Concurso</th>
+        <th scope="col">Data do sorteio</th>
+        <th scope="col">Dezenas</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let concurso of concursos">
+            <td>{{concurso.numero}}</td>
+            <td>{{concurso.dataSorteio}}</td>
+            <td>
+                <mgsn-dezenas-list [dezenas]='concurso.dezenas' ></mgsn-dezenas-list>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<mgsn-botao-carregar 
+    (click)='carregarMais()'
+    [temMais]="temMais">
+</mgsn-botao-carregar>

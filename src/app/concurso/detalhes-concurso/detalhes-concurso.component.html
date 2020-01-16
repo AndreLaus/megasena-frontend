@@ -1,0 +1,21 @@
+<mgsn-buscar-detalhes-concurso></mgsn-buscar-detalhes-concurso>
+
+<h4>Concurso: {{ detalhesConcurso.numero }}</h4>
+<p>Data do sorteio: {{ detalhesConcurso.dataSorteio }} </p>
+<mgsn-dezenas-list [dezenas]='detalhesConcurso.dezenas' ></mgsn-dezenas-list>
+<br>
+<div>
+    <div>
+        <p>Número de ganhadores da senha: {{detalhesConcurso.numeroGanhadoresSena}}</p>
+        <p>Rateio: {{ detalhesConcurso.rateioSena }}</p>
+    </div>
+    <div>
+        <p>Número de ganhadores da quina: {{detalhesConcurso.numeroGanhadoresQuina}}</p>
+        <p>Rateio: {{ detalhesConcurso.rateioQuina }}</p>
+    </div>
+    <div>
+        <p>Número de ganhadores da quadra: {{detalhesConcurso.numeroGanhadoresQuadra}}</p>
+        <p>Rateio: {{ detalhesConcurso.rateioQuadra }}</p>
+    </div>
+
+</div>
