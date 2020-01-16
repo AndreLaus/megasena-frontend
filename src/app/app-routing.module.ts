@@ -7,12 +7,16 @@ import { DetalhesConcursoComponent } from './concurso/detalhes-concurso/detalhes
 import { DetalhesConcursoResolver } from './concurso/detalhes-concurso.resolver';
 import { ListaConcursosComponent } from './concurso/lista-concursos/lista-concursos.component';
 import { ConcursosPaginadosResolver } from './concurso/concursos-paginados.resolver';
+import { UltimoConcursoResolver } from './concurso/ultimo-concurso.resolver';
 
 
 const routes: Routes = [
   { 
     path: 'concurso/ultimo', 
-    component: UltimoConcursoComponent
+    component: UltimoConcursoComponent,
+    resolve: {
+      concurso: UltimoConcursoResolver
+    }
   },
   { 
     path: 'concurso/ultimos', 

@@ -16,7 +16,7 @@ export class ConcursoService {
         
   }
 
-  listaUltimoConcurso(){
+  buscaUltimoConcurso(){
       return this.http.get<Concurso>(API+'/concurso/ultimo');
   }
 

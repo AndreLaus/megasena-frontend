@@ -2,6 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 
 import { ConcursoService } from '../concurso.service';
 import { Concurso } from '../concurso';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'mgsn-ultimo-concurso',
@@ -12,15 +13,10 @@ export class UltimoConcursoComponent implements OnInit {
 
   concurso: Concurso;
 
-  constructor(private concursoService: ConcursoService) { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.concursoService
-      .listaUltimoConcurso()
-      .subscribe(
-        concurso => this.concurso = concurso,
-        err => console.log(err)
-      );
+    this.concurso = this.activatedRoute.snapshot.data['concurso'];
   }
 
 }
