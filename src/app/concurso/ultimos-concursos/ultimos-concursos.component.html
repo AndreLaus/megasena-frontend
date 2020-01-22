@@ -10,7 +10,9 @@
             <td>{{concurso.numero}}</td>
             <td>{{concurso.dataSorteio}}</td>
             <td>
-                <mgsn-dezenas-list [dezenas]='concurso.dezenas' ></mgsn-dezenas-list>
+                <div mgsnDarkenOnHover>
+                    <mgsn-dezenas-list [dezenas]='concurso.dezenas'></mgsn-dezenas-list>
+                </div>
             </td>
         </tr>
     </tbody>

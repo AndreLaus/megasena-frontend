@@ -9,8 +9,10 @@
         <tr *ngFor="let concurso of concursos">
             <td>{{concurso.numero}}</td>
             <td>{{concurso.dataSorteio}}</td>
-            <td>
-                <mgsn-dezenas-list [dezenas]='concurso.dezenas' ></mgsn-dezenas-list>
+            <td >
+                <div mgsnDarkenOnHover >
+                    <mgsn-dezenas-list [dezenas]='concurso.dezenas' ></mgsn-dezenas-list>
+                </div>
             </td>
         </tr>
     </tbody>

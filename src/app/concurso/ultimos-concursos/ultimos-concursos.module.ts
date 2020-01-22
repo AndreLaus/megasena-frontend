@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UltimosConcursosComponent } from './ultimos-concursos.component';
 import { DezenasModule } from 'src/app/dezenas/dezenas.module';
+import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/darken-on-hover.module';
 
 
 
@@ -11,7 +12,8 @@ import { DezenasModule } from 'src/app/dezenas/dezenas.module';
   ],
   imports: [
     CommonModule,
-    DezenasModule
+    DezenasModule,
+    DarkenOnHoverModule
   ],
   exports: [
     UltimosConcursosComponent

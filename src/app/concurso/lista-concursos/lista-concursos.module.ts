@@ -5,6 +5,7 @@ import { ListaConcursosComponent } from './lista-concursos.component';
 import { DezenasModule } from 'src/app/dezenas/dezenas.module';
 import { BotaoCarregarModule } from './botao-carregar/botao-carregar.module';
 import { BuscarDetalhesConcursoModule } from '../buscar-detalhes-concurso/buscar-detalhes-concurso.module';
+import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/darken-on-hover.module';
 
 
 
@@ -17,7 +18,8 @@ import { BuscarDetalhesConcursoModule } from '../buscar-detalhes-concurso/buscar
     DezenasModule,
     BotaoCarregarModule,
     BuscarDetalhesConcursoModule,
-    DezenasModule
+    DezenasModule,
+    DarkenOnHoverModule
   ],
   exports: [
     ListaConcursosComponent
