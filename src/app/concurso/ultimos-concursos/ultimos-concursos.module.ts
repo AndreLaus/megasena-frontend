@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UltimosConcursosComponent } from './ultimos-concursos.component';
 import { DezenasModule } from 'src/app/dezenas/dezenas.module';
 import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/darken-on-hover.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,6 +13,7 @@ import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/d
   ],
   imports: [
     CommonModule,
+    RouterModule,
     DezenasModule,
     DarkenOnHoverModule
   ],

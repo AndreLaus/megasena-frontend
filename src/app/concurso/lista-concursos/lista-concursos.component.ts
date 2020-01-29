@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Concurso } from '../concurso';
 import { ConcursoService } from '../concurso.service';
@@ -36,7 +36,5 @@ export class ListaConcursosComponent implements OnInit {
       .listaConcursos(++this.paginaAtual)
       .subscribe(concursosPaginados => this.preparaDados(concursosPaginados));
   }
-
-
 
 }

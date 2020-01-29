@@ -7,7 +7,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let concurso of concursos">
-            <td>{{concurso.numero}}</td>
+            <td><a  [routerLink]="['/concurso',concurso.numero]" >{{concurso.numero}}</a></td>
             <td>{{concurso.dataSorteio}}</td>
             <td >
                 <div mgsnDarkenOnHover >

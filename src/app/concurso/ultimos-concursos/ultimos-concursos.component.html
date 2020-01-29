@@ -1,5 +1,5 @@
 <p>Últimos concursos</p>
-<table class="table table-striped">
+<table class="table table-sm table-striped">
     <thead>
         <th scope="col">Concurso</th>
         <th scope="col">Data do sorteio</th>
@@ -13,6 +13,16 @@
                 <div mgsnDarkenOnHover>
                     <mgsn-dezenas-list [dezenas]='concurso.dezenas'></mgsn-dezenas-list>
                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button 
+                    [routerLink]="['concurso','lista']"
+                    type="button" 
+                    class="btn btn-primary">
+                    Carregar mais
+                </button>
             </td>
         </tr>
     </tbody>

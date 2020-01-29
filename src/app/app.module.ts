@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 
 import { ConcursoModule } from './concurso/concurso.module';
 import { ErrorsModule } from './errors/errors.module';
+import { AnonimoModule } from './paginas-centrais/anonimo/anonimo.module';
+import { LogadoModule } from './paginas-centrais/logado/logado.module';
+import { CoreModule } from './core/core.module';
 
 
 
@@ -14,9 +17,12 @@ import { ErrorsModule } from './errors/errors.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ConcursoModule,
-    ErrorsModule
+    ErrorsModule,
+    AnonimoModule,
+    LogadoModule,
+    CoreModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

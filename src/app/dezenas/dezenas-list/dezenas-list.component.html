@@ -1,13 +1,9 @@
-<div>
-<ol class="list-unstyled">
-    <li *ngFor="let cols of rows" class="row no-gutters">
-        <div class="col-7">
-
+<div class="container-fluid">
+    <div *ngFor="let cols of rows">
+        <div >
             <mgsn-dezena *ngFor="let dezena of cols" [dezena]="dezena">
             </mgsn-dezena>
         </div>
-
-    </li>
-</ol>
+    </div>
 </div>
 
